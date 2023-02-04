@@ -1,0 +1,27 @@
+.flex {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.first_color {
+  background-color: rgb(74, 101, 160);
+}
+
+.secondary_color {
+  background-color: rgb(86, 131, 220);
+}
+
+.text_white {
+  color: white;
+}
