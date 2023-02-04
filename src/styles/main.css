@@ -1,0 +1,10 @@
+.itemContainer {
+  width: 50%;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.item_container:hover {
+  background-color: rgb(74, 101, 160, 0.8);
+}

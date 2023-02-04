@@ -1,0 +1,10 @@
+#Navbar {
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.buttonNav {
+  background-color: transparent;
+  border: none;
+}
