@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../styles/item.css';
 import { BsArrowRightCircle } from 'react-icons/bs';
 
@@ -30,3 +31,10 @@ const Item = (props) => {
 };
 
 export default Item;
+
+Item.propTypes = {
+  icon: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  symbol: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+};

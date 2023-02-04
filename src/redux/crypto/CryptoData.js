@@ -19,7 +19,7 @@ export const getData = () => async (dispatch) => {
 
 const crytoReducer = (state = [], action) => {
   switch (action.type) {
-    case SUCCESS_FETCH: console.log(action.payload); return action.payload;
+    case SUCCESS_FETCH: return action.payload;
     case FAIL_FETCH:
       return { ...state, loading: false, error: action.payload };
     default: return state;
