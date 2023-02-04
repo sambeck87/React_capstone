@@ -1,51 +1,87 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
+import { useParams } from 'react-router-dom';
 import '../styles/Details.css';
+import Navbar from '../components/Navbar';
+import '../styles/commons.css';
 
-const Chart = () => (
-  <div className="data-cont">
+const Chart = () => {
+  const params = useParams();
+  const { id } = params;
+  const crypto = useSelector((state) => state.crytoReducer);
 
-    <div id="search" className="first_color text_white">
-      Attributes
-    </div>
-    <ul className="details-cont text_white">
-      <li className="details-light">
-        <span className="margin_left">Name :</span>
-        <span className="margin_right">CryptoName</span>
-      </li>
-      <li className="details-dark">
-        <span className="margin_left">Symbol :</span>
-        <span className="margin_right">Simbol</span>
-      </li>
-      <li className="details-light">
-        <span className="margin_left">Rank :</span>
-        <span className="margin_right">#1</span>
-      </li>
-      <li className="details-dark">
-        <span className="margin_left">Supply :</span>
-        <span className="margin_right">Supply</span>
-      </li>
-      <li className="details-light">
-        <span className="margin_left">Market Capital(USD) :</span>
-        <span className="margin_right">Capital</span>
-      </li>
-      <li className="details-dark">
-        <span className="margin_left">Volume(USD) 24Hrs :</span>
-        <span className="margin_right">Volume</span>
-      </li>
-      <li className="details-light">
-        <span className="margin_left">Price(USD) :</span>
-        <span className="margin_right">Price</span>
-      </li>
-      <li className="details-dark">
-        <span className="margin_left">Change Percent(24Hr) :</span>
-        <span className="margin_right">Change</span>
-      </li>
-      <li className="details-light">
-        <span className="margin_left">VWAP(24Hr) :</span>
-        <span className="margin_right">VWAP</span>
-      </li>
-    </ul>
-  </div>
-);
+  const filtered = [...crypto].filter(
+    (data) => data.id === id,
+  );
+
+  return (
+    <>
+      <Navbar />
+      {filtered.map((element) => (
+        <div key={element.id} className="data-cont">
+
+          <div id="coinHeader" className="flex row secondary_color text_white header">
+            <img id="icon_details" src={element.icon} alt="main_image" />
+            <h1 id="cryptoCoin">{element.name}</h1>
+          </div>
+
+          <div id="search" className="first_color text_white">
+            Attributes
+          </div>
+          <ul className="details-cont text_white">
+            <li className="details-light">
+              <span className="margin_left">Name : </span>
+              <span className="margin_right">{element.name}</span>
+            </li>
+            <li className="details-dark">
+              <span className="margin_left">Symbol :</span>
+              <span className="margin_right">{element.symbol}</span>
+            </li>
+            <li className="details-light">
+              <span className="margin_left">Rank :</span>
+              <span className="margin_right">{element.rank}</span>
+            </li>
+            <li className="details-dark">
+              <span className="margin_left">USD Price :</span>
+              <span className="margin_right">{element.price}</span>
+            </li>
+            <li className="details-light">
+              <span className="margin_left">Bitcon Price :</span>
+              <span className="margin_right">{element.priceBtc}</span>
+            </li>
+            <li className="details-dark">
+              <span className="margin_left">Volume :</span>
+              <span className="margin_right">{element.volume}</span>
+            </li>
+            <li className="details-light">
+              <span className="margin_left">Capital Market :</span>
+              <span className="margin_right">{element.marketCap}</span>
+            </li>
+            <li className="details-dark">
+              <span className="margin_left">Available Supply :</span>
+              <span className="margin_right">{element.availableSupply}</span>
+            </li>
+            <li className="details-light">
+              <span className="margin_left">Total Supply :</span>
+              <span className="margin_right">{element.totalSupply}</span>
+            </li>
+            <li className="details-dark">
+              <span className="margin_left">Price Change (1Hr) :</span>
+              <span className="margin_right">{element.priceChange1h}</span>
+            </li>
+            <li className="details-light">
+              <span className="margin_left">Price Change (1D) :</span>
+              <span className="margin_right">{element.priceChange1d}</span>
+            </li>
+            <li className="details-dark">
+              <span className="margin_left">Price Change (1W) :</span>
+              <span className="margin_right">{element.priceChange1w}</span>
+            </li>
+          </ul>
+        </div>
+      ))}
+    </>
+  );
+};
 
 export default Chart;

@@ -4,7 +4,22 @@
   color: white;
 }
 
-.buttonNav {
+.homeLink {
+  display: block;
   background-color: transparent;
   border: none;
+  align-self: center;
+}
+
+.activeLink {
+  display: none;
+}
+
+#year {
+  margin-left: 2rem;
+}
+
+.buttonNav {
+  border: none;
+  background-color: transparent;
 }

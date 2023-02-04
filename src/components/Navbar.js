@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { IoIosArrowBack, IoIosSettings } from 'react-icons/io';
 import { BsFillMicFill } from 'react-icons/bs';
 import '../styles/commons.css';
@@ -9,10 +10,14 @@ const Navbar = () => {
   return (
     <div id="Navbar" className="flex row first_color">
       <div className="flex row">
-        <button className="buttonNav" type="button">
+        <NavLink
+          className={({ isActive }) => (isActive ? 'activeLink' : 'homeLink')}
+          to="/"
+          type="button"
+        >
           <IoIosArrowBack style={{ color: '#fff', fontSize: '20px', marginTop: '2px' }} />
-        </button>
-        <p>{currentYear}</p>
+        </NavLink>
+        <p id="year">{currentYear}</p>
       </div>
       <p>Top 100 rank</p>
       <div>
