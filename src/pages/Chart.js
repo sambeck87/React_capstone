@@ -3,6 +3,10 @@ import '../styles/Details.css';
 
 const Chart = () => (
   <div className="data-cont">
+
+    <div id="search" className="first_color text_white">
+      Attributes
+    </div>
     <ul className="details-cont text_white">
       <li className="details-light">
         <span className="margin_left">Name :</span>

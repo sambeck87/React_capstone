@@ -10,7 +10,6 @@ const Header = () => (
     <div id="header" className="flex row secondary_color text_white">
       <img id="main_image" src={Investment} alt="main_image" />
       <h1 id="mainTitle">CRYPTO CURRENCY</h1>
-      <input id="search" className="first_color text_white" type="text" placeholder="Search by Crypto Name" />
     </div>
   </>
 );

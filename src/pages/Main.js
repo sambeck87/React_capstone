@@ -17,6 +17,7 @@ const Main = () => {
 
   return (
     <div className="flex wrap">
+      <input id="search" className="first_color text_white" type="text" placeholder="Search by Crypto Name" />
       {
       crypto.map((element) => (
         <button type="button" key={element.id} className="itemContainer">
