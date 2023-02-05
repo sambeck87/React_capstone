@@ -20,15 +20,15 @@ const Chart = () => {
       {filtered.map((element) => (
         <div key={element.id} className="data-cont">
 
-          <div id="coinHeader" className="flex row secondary_color text_white header">
+          <div id="coinHeader" className="flex row secondary_color text_white header lato">
             <img id="icon_details" src={element.icon} alt="main_image" />
             <h1 id="cryptoCoin">{element.name}</h1>
           </div>
 
-          <div id="search" className="first_color text_white">
+          <div id="search" className="first_color text_white lato">
             Attributes
           </div>
-          <ul className="details-cont text_white">
+          <ul className="details-cont text_white alata">
             <li className="details-light">
               <span className="margin_left">Name : </span>
               <span className="margin_right">{element.name}</span>

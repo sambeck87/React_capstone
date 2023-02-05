@@ -1,3 +1,11 @@
+.alata {
+  font-family: 'Alata', sans-serif;
+}
+
+.lato {
+  font-family: 'Lato', sans-serif;
+}
+
 .flex {
   display: flex;
 }

@@ -8,7 +8,7 @@ import '../styles/navbar.css';
 const Navbar = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <div id="Navbar" className="flex row first_color">
+    <div id="Navbar" className="flex row first_color lato">
       <div className="flex row">
         <NavLink
           className={({ isActive }) => (isActive ? 'activeLink' : 'homeLink')}
@@ -19,7 +19,7 @@ const Navbar = () => {
         </NavLink>
         <p id="year">{currentYear}</p>
       </div>
-      <p>Top 100 rank</p>
+      <p id="rank">Top 100 rank</p>
       <div>
         <button className="buttonNav" type="button">
           <BsFillMicFill style={{ color: '#fff', fontSize: '20px', marginTop: '2px' }} />

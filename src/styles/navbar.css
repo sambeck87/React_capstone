@@ -17,6 +17,12 @@
 
 #year {
   margin-left: 2rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+#rank {
+  font-size: 1.2rem;
 }
 
 .buttonNav {

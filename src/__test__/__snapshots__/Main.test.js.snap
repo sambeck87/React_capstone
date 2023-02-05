@@ -4,7 +4,7 @@ exports[`Rockets renders Rockets Page without crashing 1`] = `undefined`;
 
 exports[`Rockets renders Rockets Page without crashing 2`] = `
 <div
-  class="flex row first_color"
+  class="flex row first_color lato"
   id="Navbar"
 >
   <div
@@ -37,7 +37,9 @@ exports[`Rockets renders Rockets Page without crashing 2`] = `
       2023
     </p>
   </div>
-  <p>
+  <p
+    id="rank"
+  >
     Top 100 rank
   </p>
   <div>
@@ -88,7 +90,7 @@ exports[`Rockets renders Rockets Page without crashing 2`] = `
 
 exports[`Rockets renders Rockets Page without crashing 3`] = `
 <div
-  class="flex row first_color"
+  class="flex row first_color lato"
   id="Navbar"
 >
   <div
@@ -121,7 +123,9 @@ exports[`Rockets renders Rockets Page without crashing 3`] = `
       2023
     </p>
   </div>
-  <p>
+  <p
+    id="rank"
+  >
     Top 100 rank
   </p>
   <div>
