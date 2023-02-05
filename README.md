@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <img src="https://cdn-icons-png.flaticon.com/512/1055/1055646.png" alt="logo" width="250"  height="auto" />
+  <img src="https://cdn-icons-png.flaticon.com/512/3378/3378138.png" alt="logo" width="250"  height="auto" />
   <br/>
 
 </div>
@@ -29,19 +29,18 @@
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
 - [❓ FAQ](#faq)
-- [📝 License](#license)
+- [📝 License](#license) 
 
 <!-- PROJECT DESCRIPTION -->
 
-# 🚀 Space Travelers <a name="about-project"></a>
+# 🚀 CRYPTO CURRENCY <a name="about-project"></a>
 
 
-**Space Travelers' Hub** is a website that contains variour ships, and missions that you can join and reserve. Each one of those has its own description for you to learn more about them. This project allows you to:
+**CRYPTO CURRENCY** is a SPA that obtains information on the 100 most important cryptocurrencies worldwide and displays it for viewing. This application allows you to:
 
-  - Display a list of ships.
-  - See a list of joinable missions.
-  - Reserve ships and join missions.
-  - Cancel reservations and leave missions.
+- Display the name, symbol, icon, and current dollar price of the cryptocurrency on the main page.
+- Perform a search for the desired item through a text entry.
+-Clicking on the desired item opens another page where you can view more information about it.
 
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -57,6 +56,9 @@
 ### Key Features <a name="key-features"></a>
 
 - This is a single page application
+- URLs are dinamicaly created
+- Use a filter to search a specific element
+- Get information from an API
 - This is the prototype of the full website
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -90,10 +92,10 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 - Go to this repo and copy the project link
-        https://github.com/sambeck87/react_redux_project
+        https://github.com/sambeck87/React_capstone
 - Open your terminal and clone the repo with this command
 ``` 
-git clone https://github.com/sambeck87/react_redux_project.git
+git clone https://github.com/sambeck87/React_capstone.git
 ```
 - Now, you have a copy on your pc. 
 
@@ -127,12 +129,12 @@ npm test
 
 You can deploy this project using:
 
- - [GitHub pages](https://github.com/sambeck87/react_redux_project/settings/pages) 
+ - [GitHub pages](https://github.com/sambeck87/React_capstone/settings/pages) 
  - [Render](https://render.com/)
  - [netlify](https://www.netlify.com/)
  - [000webhost.com](https://www.000webhost.com/)
 
-This project use Github Pages to deploy the page, just type the command: "npm deploy"
+This project used render to deploy the page.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -152,8 +154,8 @@ This project use Github Pages to deploy the page, just type the command: "npm de
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Each person will have their own profile to log into the site**
-- [ ] **Reservations will be store per profile**
+- [ ] **You will be able to save your favorite cryptos**
+- [ ] **We will add more crytos**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -163,7 +165,7 @@ This project use Github Pages to deploy the page, just type the command: "npm de
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/sambeck87/react_redux_project/issues).
+Feel free to check the [issues page](https://github.com/sambeck87/React_capstone/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -180,7 +182,8 @@ If you like this project give a ⭐️ or send us a message. We will apreciate
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank to Microverse for the inspiration to be better every day.
+The original idea for this template is by [Nelson Sakwa on Behance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)). I appreciate the information provided to make this application a reality.
+Also, I would like to thank to Microverse for the inspiration to be better every day.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -194,7 +197,7 @@ I would like to thank to Microverse for the inspiration to be better every day.
 
 - **Can I use the code of this project**
 
-  - Sure. We will be happy to colaborate with this project. This project is MIT licensed.
+  - Sure. We will be happy to colaborate with this project. This project is MIT licensed. Remember that the origial idea is by [Nelson Sakwa](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)), don't forget thanks him.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
