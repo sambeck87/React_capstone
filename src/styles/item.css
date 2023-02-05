@@ -27,7 +27,13 @@
 }
 
 .price {
-  font-size: 1rem;
+  font-size: 3.2vw;
   font-weight: 300;
   font-style: italic;
+}
+
+@media screen and (min-width: 450px) {
+  .price {
+      font-size: 1rem;
+    }
 }

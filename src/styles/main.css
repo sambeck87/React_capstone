@@ -1,3 +1,16 @@
+#coinHeader {
+  justify-content: center;
+}
+
+#icon_details {
+  width: 15%;
+  margin: 2rem 0;
+}
+
+#cryptoCoin {
+  margin-left: 4rem;
+}
+
 .itemContainer {
   width: 100%;
   border: none;
@@ -22,7 +35,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 50%);
   grid-template-rows: repeat(50, 1fr);
   grid-gap: 0;
 }

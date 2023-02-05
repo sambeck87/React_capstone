@@ -25,9 +25,9 @@ const Main = () => {
   return (
     <>
       <Navbar />
-      <div className="flex row secondary_color text_white header lato">
-        <img className="main_image" src={Investment} alt="main_image" />
-        <h1 className="mainTitle">CRYPTO CURRENCY</h1>
+      <div id="coinHeader" className="flex row secondary_color text_white header lato">
+        <img id="icon_details" className="main_image" src={Investment} alt="main_image" />
+        <h1 id="cryptoCoin" className="mainTitle">CRYPTO CURRENCY</h1>
       </div>
       <input value={search} id="search" className="first_color text_white lato" type="text" placeholder="   Search by Crypto Name" onChange={searchHandle} />
       <div id="chartContainer" className="grid flex wrap alata">
