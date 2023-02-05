@@ -25,18 +25,18 @@ const Main = () => {
   return (
     <>
       <Navbar />
-      <div className="flex row secondary_color text_white header">
+      <div className="flex row secondary_color text_white header lato">
         <img className="main_image" src={Investment} alt="main_image" />
         <h1 className="mainTitle">CRYPTO CURRENCY</h1>
       </div>
-      <div className="flex wrap">
-        <input value={search} id="search" className="first_color text_white" type="text" placeholder="Search by Crypto Name" onChange={searchHandle} />
+      <input value={search} id="search" className="first_color text_white lato" type="text" placeholder="   Search by Crypto Name" onChange={searchHandle} />
+      <div id="chartContainer" className="grid flex wrap alata">
         {
           filtered.map((element) => (
             <NavLink
               to={`details/${element.id}`}
               key={element.id}
-              className="itemContainer"
+              className="grid_item itemContainer"
             >
               <Item
                 id={element.id}

@@ -11,7 +11,7 @@ const Item = (props) => {
     price,
   } = props;
   return (
-    <div className="item_container secondary_color">
+    <div className="item_container">
       <div className="item_content flex column text_white">
         <div className="button_next flex" type="button">
           <BsArrowRightCircle style={{ color: '#fff', fontSize: '20px', marginTop: '2px' }} />
