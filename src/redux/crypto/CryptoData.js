@@ -1,5 +1,5 @@
-const SUCCESS_FETCH = 'React_capstone/crypto/SUCCESS_FETCH';
-const FAIL_FETCH = 'React_capstone/crypto/FAIL_FETCH';
+export const SUCCESS_FETCH = 'React_capstone/crypto/SUCCESS_FETCH';
+export const FAIL_FETCH = 'React_capstone/crypto/FAIL_FETCH';
 const URL = 'https://api.coinstats.app/public/v1/coins?limit=100';
 
 export const getData = () => async (dispatch) => {

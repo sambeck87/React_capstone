@@ -16,11 +16,11 @@ const Item = (props) => {
         <div className="button_next flex" type="button">
           <BsArrowRightCircle style={{ color: '#fff', fontSize: '20px', marginTop: '2px' }} />
         </div>
-        <img className="logo" src={icon} alt="logo" />
+        <img data-testid="icon" className="logo" src={icon} alt="logo" />
         <div className="cryto_data flex column">
-          <span className="bold rigth">{name}</span>
-          <span className="bold rigth">{symbol}</span>
-          <span className="price rigth">
+          <span data-testid="name" className="bold rigth">{name}</span>
+          <span data-testid="symbol" className="bold rigth">{symbol}</span>
+          <span data-testid="price" className="price rigth">
             US$
             {price}
           </span>
