@@ -8,3 +8,17 @@
 .item_container:hover {
   background-color: rgb(74, 101, 160, 0.8);
 }
+
+#search {
+  width: 100%;
+  border: none;
+  font-size: 1.5rem;
+}
+
+#search::placeholder {
+  color: rgba(245, 245, 220, 0.392);
+}
+
+a {
+  text-decoration: none;
+}

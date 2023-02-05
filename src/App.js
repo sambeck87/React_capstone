@@ -1,17 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Header from './components/Header';
+import { useDispatch } from 'react-redux';
+import { getData } from './redux/crypto/CryptoData';
 import Main from './pages/Main';
 import Chart from './pages/Chart';
 
-const App = () => (
-  <>
-    <Header />
-    <Routes>
-      <Route path="/" element={<Main />} />
-      <Route path="chart" element={<Chart />} />
-    </Routes>
-  </>
-);
+const App = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getData());
+  }, [dispatch]);
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/details/:id/" element={<Chart />} />
+      </Routes>
+    </>
+  );
+};
 
 export default App;

@@ -1,37 +1,55 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { getData } from '../redux/crypto/CryptoData';
+import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 import Item from '../components/Item';
+import Navbar from '../components/Navbar';
+import Investment from '../images/Investment.png';
 import '../styles/main.css';
+import '../styles/commons.css';
 
-let flag = false;
 const Main = () => {
   const crypto = useSelector((state) => state.crytoReducer);
-  const dispatch = useDispatch();
-  useEffect(() => {
-    if (!flag) {
-      dispatch(getData());
-      flag = true;
-    }
-  }, [dispatch]);
+  const [search, setSearch] = useState('');
+
+  const searchHandle = (e) => setSearch(e.target.value);
+
+  let filtered = [];
+  if (!search) {
+    filtered = [...crypto];
+  } else {
+    filtered = [...crypto].filter(
+      (data) => data.name.toLowerCase().includes(search.toLocaleLowerCase()),
+    );
+  }
 
   return (
-    <div className="flex wrap">
-      <input id="search" className="first_color text_white" type="text" placeholder="Search by Crypto Name" />
-      {
-      crypto.map((element) => (
-        <button type="button" key={element.id} className="itemContainer">
-          <Item
-            id={element.id}
-            icon={element.icon}
-            name={element.name}
-            symbol={element.symbol}
-            price={element.price}
-          />
-        </button>
-      ))
-}
-    </div>
+    <>
+      <Navbar />
+      <div className="flex row secondary_color text_white header">
+        <img className="main_image" src={Investment} alt="main_image" />
+        <h1 className="mainTitle">CRYPTO CURRENCY</h1>
+      </div>
+      <div className="flex wrap">
+        <input value={search} id="search" className="first_color text_white" type="text" placeholder="Search by Crypto Name" onChange={searchHandle} />
+        {
+          filtered.map((element) => (
+            <NavLink
+              to={`details/${element.id}`}
+              key={element.id}
+              className="itemContainer"
+            >
+              <Item
+                id={element.id}
+                icon={element.icon}
+                name={element.name}
+                symbol={element.symbol}
+                price={element.price}
+              />
+            </NavLink>
+          ))
+        }
+      </div>
+    </>
   );
 };
 

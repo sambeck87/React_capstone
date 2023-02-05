@@ -22,6 +22,19 @@
   font-weight: 600;
 }
 
+#coinHeader {
+  justify-content: center;
+}
+
+#icon_details {
+  width: 15%;
+  margin: 2rem 0;
+}
+
+#cryptoCoin {
+  margin-left: 4rem;
+}
+
 .details-light {
   background-color: rgb(86, 131, 220);
 }

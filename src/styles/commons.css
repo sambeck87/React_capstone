@@ -25,3 +25,16 @@
 .text_white {
   color: white;
 }
+
+.header {
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main_image {
+  width: 50%;
+}
+
+.mainTitle {
+  width: 50%;
+}
