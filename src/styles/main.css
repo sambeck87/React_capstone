@@ -1,0 +1,57 @@
+#coinHeader {
+  justify-content: center;
+}
+
+#icon_details {
+  width: 15%;
+  margin: 2rem 0;
+}
+
+#cryptoCoin {
+  margin-left: 4rem;
+}
+
+.itemContainer {
+  width: 100%;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.item_container:hover {
+  background-color: rgb(74, 101, 160, 0.8);
+}
+
+#search {
+  width: 100%;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.7rem 0;
+}
+
+#search::placeholder {
+  color: rgba(245, 245, 220, 0.392);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(50, 1fr);
+  grid-gap: 0;
+}
+
+.grid_item {
+  background-color: rgb(61, 82, 129);
+}
+
+.grid_item:nth-child(4n) {
+  background-color: rgb(86, 131, 220);
+}
+
+.grid_item:nth-child(4n+1) {
+  background-color: rgb(86, 131, 220);
+}
+
+a {
+  text-decoration: none;
+}

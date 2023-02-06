@@ -1,0 +1,52 @@
+.data-cont {
+  margin: 0;
+  padding: 0;
+  height: 80vh;
+}
+
+.details-cont {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 80vh;
+}
+
+.details-cont li {
+  list-style: none;
+  height: 11.11%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Alata', sans-serif;
+}
+
+#coinHeader {
+  justify-content: center;
+}
+
+#icon_details {
+  width: 15%;
+  margin: 2rem 0;
+}
+
+#cryptoCoin {
+  margin-left: 4rem;
+}
+
+.details-light {
+  background-color: rgb(86, 131, 220);
+}
+
+.details-dark {
+  background-color: rgb(74, 101, 160);
+}
+
+.margin_left {
+  margin-left: 0.7rem;
+}
+
+.margin_right {
+  margin-right: 0.7rem;
+}

@@ -1,0 +1,39 @@
+.item_container {
+  padding: 0.5rem 0;
+}
+
+.item_content {
+  margin: 0 0.5rem;
+}
+
+.button_next {
+  background-color: transparent;
+  border: none;
+  justify-content: flex-end;
+}
+
+.logo {
+  width: 30%;
+  margin: 0.5rem 0;
+}
+
+.cryto_data {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.rigth {
+  text-align: end;
+}
+
+.price {
+  font-size: 3.2vw;
+  font-weight: 300;
+  font-style: italic;
+}
+
+@media screen and (min-width: 450px) {
+  .price {
+    font-size: 1rem;
+  }
+}

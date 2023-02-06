@@ -1,0 +1,31 @@
+#Navbar {
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.homeLink {
+  display: block;
+  background-color: transparent;
+  border: none;
+  align-self: center;
+}
+
+.activeLink {
+  display: none;
+}
+
+#year {
+  margin-left: 2rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+#rank {
+  font-size: 1.2rem;
+}
+
+.buttonNav {
+  border: none;
+  background-color: transparent;
+}
