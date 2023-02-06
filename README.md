@@ -40,7 +40,9 @@
 
 - Display the name, symbol, icon, and current dollar price of the cryptocurrency on the main page.
 - Perform a search for the desired item through a text entry.
--Clicking on the desired item opens another page where you can view more information about it.
+- Clicking on the desired item opens another page where you can view more information about it.
+
+**You can see a you can see a brief explanation of the application in the following [video](https://www.loom.com/share/617fd05fd0ba41b2aa539dd7d6acf334)**
 
 
 ## 🛠 Built With <a name="built-with"></a>
