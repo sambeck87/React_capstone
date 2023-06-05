@@ -22,10 +22,6 @@
   font-family: 'Alata', sans-serif;
 }
 
-#coinHeader {
-  justify-content: center;
-}
-
 #icon_details {
   width: 15%;
   margin: 2rem 0;
@@ -49,4 +45,38 @@
 
 .margin_right {
   margin-right: 0.7rem;
+}
+
+@media screen and (min-width: 768px) {
+  .data-cont {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../images/chart.gif');
+    background-size: contain;
+    background-attachment: fixed;
+    overflow-y: scroll;
+  }
+
+  .details-cont {
+    margin: 3rem 0;
+    width: 70%;
+    height: fit-content;
+  }
+
+  .details-cont li {
+    font-size: 2rem;
+    text-shadow: 5px 1px 5px black;
+  }
+
+  .details-dark {
+    background-color: rgba(255, 0, 0, 0.5);
+    border: 1px solid rgba(226, 0, 0, 0.938);
+  }
+
+  .details-light {
+    border: 1px solid rgba(0, 226, 30, 0.938);
+    background-color: rgba(0, 255, 13, 0.5);
+  }
 }

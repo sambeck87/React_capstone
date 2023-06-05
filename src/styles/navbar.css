@@ -2,6 +2,7 @@
   justify-content: space-between;
   align-items: center;
   color: white;
+  padding: 0.5rem 1rem;
 }
 
 .homeLink {
@@ -9,6 +10,10 @@
   background-color: transparent;
   border: none;
   align-self: center;
+}
+
+svg {
+  font-size: 50px;
 }
 
 .activeLink {
@@ -28,4 +33,14 @@
 .buttonNav {
   border: none;
   background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  #Navbar {
+    padding: 0.5rem 3rem;
+  }
+
+  svg {
+    font-size: 35px;
+  }
 }

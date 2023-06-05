@@ -55,3 +55,51 @@
 a {
   text-decoration: none;
 }
+
+@media screen and (min-width: 768px) {
+  #coinHeader {
+    background-image: url('../images/header_desk.webp');
+    background-size: cover;
+    background-position: center;
+    height: 10rem;
+    width: 100%;
+  }
+
+  #icon_details {
+    display: none;
+  }
+
+  #cryptoCoin {
+    text-align: center;
+  }
+
+  #chartContainer {
+    display: flex;
+    justify-content: space-around;
+    background-image: url('../images/background_desk.gif');
+    background-size: contain;
+    background-attachment: fixed;
+  }
+
+  .item_container {
+    border: 1px solid rgba(0, 226, 30, 0.938);
+    background-color: rgba(0, 255, 13, 0.137);
+  }
+
+  .item_container:hover {
+    background-color: rgba(255, 0, 0, 0.137);
+    border: 1px solid rgba(226, 0, 0, 0.938);
+  }
+
+  .itemContainer {
+    width: 300px;
+    margin: 2rem 0;
+  }
+
+  .grid_item:nth-child(4n),
+  .grid_item:nth-child(4n+1),
+  .grid_item {
+    background-color: rgba(30, 104, 33, 0);
+  }
+
+}
